@@ -1,16 +1,20 @@
 import React from "react";
 import styles from "./Searchbox.module.css";
-import SearchImage from "../../assets/Searchicon.png"
+import {ReactComponent as SearchIcon} from "../../assets/Searchicon.svg";
+export default function SearchBox({ placeholder }){
+    const onSubmit = (e) => {
+        e.preventDefault();
+        //Process some logic here in future
+    }
 
-export default function SearchBox(){
     return(
         <>
-            <div className={styles.searchContainer}>
-            <input type="text" className={styles.searchBar} id="searchBar" placeholder="Seach a album of your choice" />
-            <button className={styles.searchButton}>
-                <img src={SearchImage} alt="Search" />
+            <form onSubmit={onSubmit} className={styles.searchContainer}>
+            <input type="text" className={styles.searchBar} id="searchBar" placeholder={placeholder} />
+            <button className={styles.searchButton} type="submit" >
+                <SearchIcon />
             </button>
-            </div>
+            </form>
         </>
     )
 }

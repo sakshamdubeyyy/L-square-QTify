@@ -5,12 +5,13 @@ import SearchBox from "../Searchbox/SearchBox";
 import FeedbackButton from "../FeedbackButton/FeedbackButton";
 
 function Navbar(){
+    const placeholder = "Search a album of your choice"
     return(
         <nav className={styles.navbar}>
             <a href="/">
                 <Logo/>
             </a>
-            <SearchBox/>
+            <SearchBox placeholder={placeholder}/>
             <FeedbackButton/>
         </nav>
     )
