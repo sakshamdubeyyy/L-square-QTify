@@ -1,0 +1,20 @@
+.searchContainer{
+    display: flex;
+    background-color: var(--color-white);
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.searchBar{
+    width: 568px;
+    height: 48px;
+    border: 0px;
+    border-radius: 8px;
+}
+
+.searchButton{
+    background-color: var(--color-white);
+    border-radius: 8px;
+    border: 0px solid black;
+
+}
