@@ -1,13 +1,15 @@
 .container{
-    background-color: black;
+    background-color: var(--color-black);
     color: var(--color-white);
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 270px;
+    text-align: center;
+    gap: 3px;
 }
 
 .heroImage{
     height: 212px;
-    width: 799px;
-    
+    width: 212px;
 }
