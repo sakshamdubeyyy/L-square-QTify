@@ -21,7 +21,7 @@ export default function Section({ title, type, data, filterSource }) {
                 setFilters([...filters, ...data]);
             })
         }
-    }, [ ]);
+    }, []);
 
     const showFilters = filters.length > 1;
 
